@@ -1,7 +1,5 @@
 {
-    "clientToken": "",  
+    "clientToken": "",
     "clientId": "",
-    "channels": {
-        "wellcome": ""
-    }
+    "prefix": ""
 }

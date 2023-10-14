@@ -5,8 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "npm run clean && npx tsc",
-    "clean": "rm -rf build/*",
-    "start": "node build/slashCommands.js && node build/index.js"
+    "clean": "rm -rf dist/*",
+    "start": "node dist/slashCommands.js && node dist/index.js"
   },
   "author": "LouzinDeev",
   "license": "ISC",

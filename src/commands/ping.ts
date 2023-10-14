@@ -1,10 +1,14 @@
+import Command from '../Command';
+import Client from '../Client';
 import lib from 'discord.js'
-export = {
-    data: new lib.SlashCommandBuilder()
-        .setName("ping")
-        .setDescription("Reply pong!"),
-    async execute(interaction : any)
-    {
-        await interaction.reply("pong!");
-    }
+
+async function pingFunction(client: Client, message: lib.Message, args: any) {
+    message.reply("PONG!");
 }
+
+const ping: Command = new Command({
+    "name": "ping",
+    "execute": pingFunction
+});
+
+module.exports = ping;
